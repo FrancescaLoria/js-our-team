@@ -39,3 +39,14 @@ const workersArray = [
 ];
 
 console.log(workersArray);
+
+// Stampare su console le informazioni di nome, ruolo e la stringa della foto
+// Stampare le stesse informazioni su DOM sottoforma di stringhe
+const workesDom = document.querySelector("ul");
+for (let i = 0; i < workersArray.length; i++) {
+  let currWorkes = workersArray[i];
+  console.log(currWorkes.nome, currWorkes.ruolo, currWorkes.foto);
+  workesDom.innerHTML += `<li>${currWorkes.nome}</li>
+  <li>${currWorkes.ruolo}</li>
+  <li>${currWorkes.foto}</li>`;
+}
