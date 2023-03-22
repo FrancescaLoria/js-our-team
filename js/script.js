@@ -48,5 +48,5 @@ for (let i = 0; i < workersArray.length; i++) {
   console.log(currWorkes.nome, currWorkes.ruolo, currWorkes.foto);
   workesDom.innerHTML += `<li>${currWorkes.nome}</li>
   <li>${currWorkes.ruolo}</li>
-  <li>${currWorkes.foto}</li>`;
+  <li><img src= "img/${currWorkes.foto}"</li>`;
 }
